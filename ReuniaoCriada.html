@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<!-- Grupo: 01, Número: 57155, Nome: Gabriel Fonseca -->
+<!-- Grupo: 01, Número: 55852, Nome: Marcos Leitão -->
+<!-- Grupo: 01, Número: 56909, Nome: Miguel Fernandes -->
+<!-- Grupo: 01, Número: 56932, Nome: Xavier Santos -->
+
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <title>GVC</title>
+    <link href="css/ReuniaoCriada.css" type="text/css" rel="stylesheet">
+    <script src="js/ReuniaoCriada.js"></script>
+</head>
+
+<body>
+    <div id="grid-ReuniaoCriada">
+        <div id="header">
+            <ul>
+                <li><a href="Index.html">GVC</a></li>
+                <li></li>
+                <li id="reuniaoCriada">Reuniao</li>
+                <li></li>
+                <li><a href="DadosLogin.html">Admin</a></li>
+            </ul>
+        </div>
+
+        <div id="video">
+            <div id="grid-camera">
+                <div id="camera1">
+                    <img alt="" src="images/admin.jpg" id="imgClickAndChange">
+                </div>
+
+                <div id="camera2">
+                    <img alt="" src="images/Jeronimo.jpg">
+                </div>
+
+                <div id="camera3">
+                    <img alt="" src="images/Samuel.jpg">
+                </div>
+
+                <div id="camera4">
+                    <img alt="" src="images/Tiago.jpg">
+                </div>
+
+                <div id="opcoes">
+                    <button type="button" class="botaoOpcoes" id="btnMicrofone" onclick="microfone()">&#127908;</button>
+                    <button type="button" class="botaoOpcoes" id="btnVideoSemCamera"
+                        onclick="videoSemCamera()">&#128249;</button>
+                    <button type="button" class="botaoOpcoesCamera" id="btnVideoComCamera"
+                        onclick="videoComCamera()">&#128249;</button>
+                    <button type="button" class="botaoPartilhar" id="btnPartilhar"
+                        onclick="partilharEcra()">&#128187;</button>
+                    <button type="button" class="botaoOpcoes" id="btnContactos" onclick="contactos()">&#128106;</button>
+                </div>
+
+                <div id="chat">
+                    <div id="grid-chatBox">
+                        <div id="chatBox">
+
+                        </div>
+
+                        <div id="input">
+                            <form class="formulario">
+                                <button type="button" id="btnClip">&#128206;</button>
+                                <input type="text" id="mensagemTexto" placeholder="Escreve uma mensagem..." />
+                                <button type="button" id="btnMensagem">></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="modal1">
+                    <span class="close2" onclick="document.getElementById('modal1').style.display='none'">&times;</span>
+                    <p class="modalTitulo">Participantes:</p>
+                    <div id="modalContent1">
+                    </div>
+                </div>
+
+                <div id="modal2">
+                    <span class="close" onclick="fecharModal2()">&times;</span>
+                    <p class="modalTitulo">Tipo de Ficheiros:</p><br>
+                    <div id="modalContent2">
+                        <span class="pointer"><button type="button" id="btnMusicas">&#127925;</button>Músicas</span>
+                        <span class="pointer"><button type="button" id="btnImagens">&#128248;</button>Imagens</span>
+                        <span class="pointer" onclick="documentos()"><button type="button"
+                                id="btnDocumentos">&#128240;</button>Documentos</span>
+                    </div>
+                </div>
+
+                <div id="modal3">
+                    <span class="close" onclick="fecharModal3()">&times;</span>
+                    <span class="back" onclick="voltarModal2()">&#8592;</span>
+                    <p class="modalTitulo">Ficheiros:</p><br>
+                    <div id="modalContent3">
+                        <p onclick="mandaFicheiro()" class="pointer"><button type="button"
+                                id="btnFicheiro">&#128240;</button>Trabalho_2021.pdf</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

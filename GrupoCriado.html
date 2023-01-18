@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<!-- Grupo: 01, Número: 57155, Nome: Gabriel Fonseca -->
+<!-- Grupo: 01, Número: 55852, Nome: Marcos Leitão -->
+<!-- Grupo: 01, Número: 56909, Nome: Miguel Fernandes -->
+<!-- Grupo: 01, Número: 56932, Nome: Xavier Santos -->
+
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <title>GVC</title>
+    <link href="css/GrupoCriado.css" type="text/css" rel="stylesheet">
+    <script src="js/GrupoCriado.js"></script>
+</head>
+
+<body>
+    <div id="grid-grupoCriado">
+        <div id="header">
+            <ul>
+                <li><a href="Index.html" id="GVC">GVC</a></li>
+                <li></li>
+                <li id="grupoCriado"></li>
+                <li></li>
+                <li><a href="DadosLogin.html">Admin</a></li>
+            </ul>
+        </div>
+
+        <div id="chat">
+        </div>
+
+        <div id="input">
+            <form class="formulario">
+                <button type="button" id="btnContactos">&#128106;</button>
+                <button type="button" id="btnClip">&#128206;</button>
+                <input type="text" id="mensagemTexto" placeholder="Escreve uma mensagem..." />
+                <button type="button" id="btnMensagem">></button>
+            </form>
+        </div>
+
+        <div id="modal1">
+            <span class="close" onclick="document.getElementById('modal1').style.display='none'">&times;</span>
+            <p class="modalTitulo">Participantes:</p>
+            <div id="modalContent1">
+            </div>
+        </div>
+
+        <div id="modal2">
+            <span class="close" onclick="fecharModal2()">&times;</span>
+            <p class="modalTitulo">Tipo de Ficheiros:</p><br>
+            <div id="modalContent2">
+                <span class="pointer"><button type="button" id="btnMusicas">&#127925;</button>Músicas</span>
+                <span class="pointer"><button type="button" id="btnImagens">&#128248;</button>Imagens</span>
+                <span class="pointer" onclick="documentos()"><button type="button"
+                        id="btnDocumentos">&#128240;</button>Documentos</span>
+            </div>
+        </div>
+
+        <div id="modal3">
+            <span class="close" onclick="fecharModal3()">&times;</span>
+            <span class="back" onclick="voltarModal2()">&#8592;</span>
+            <p class="modalTitulo">Ficheiros:</p><br>
+            <div id="modalContent3">
+                <p onclick="mandaFicheiro()" class="pointer"><button type="button"
+                        id="btnFicheiro">&#128240;</button>BemVindos.pdf</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<!-- Grupo: 01, Número: 57155, Nome: Gabriel Fonseca -->
+<!-- Grupo: 01, Número: 55852, Nome: Marcos Leitão -->
+<!-- Grupo: 01, Número: 56909, Nome: Miguel Fernandes -->
+<!-- Grupo: 01, Número: 56932, Nome: Xavier Santos -->
+
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <title>GVC</title>
+    <link href="css/AdicionarParticipantesReuniao.css" type="text/css" rel="stylesheet">
+    <script src="js/AdicionarParticipantesReuniao.js"></script>
+</head>
+
+<body>
+    <div id="grid-contactos">
+        <div id="header">
+            <ul>
+                <li><a href="Index.html">GVC</a></li>
+                <li></li>
+                <li id="adicionarContactos">Adicionar Participantes</li>
+                <li></li>
+                <li><a href="DadosLogin.html">Admin</a></li>
+            </ul>
+        </div>
+
+        <div id="conteudo">
+            <header id="headerSearch">
+                <form>
+                    <input id="contactSearch" placeholder="Adicionar pelo email...">
+                    <button type="button" id="btnAdicionarEmail">+</button>
+                </form>
+            </header>
+
+            <div class="formulario" id="listaContactos">
+                <div class="localizar">
+                    <button type="button" id="btnChegados" onclick="abrirChegados()">Ir para os Amigos Chegados</button>
+                </div>
+
+                <!-- <hr>
+
+                <div class="seccaoContactos">
+                    <p class="nomeContacto">André Silva</p>
+                    <input type="checkbox" class="contactos" name="André Silva">
+                </div>
+
+                <hr>
+
+                <div class="seccaoContactos">
+                    <p class="nomeContacto">Beatriz Limões</p>
+                    <input type="checkbox" class="contactos" name="Beatriz Limões">
+                </div>
+
+                <hr>
+
+                <div class="seccaoContactos">
+                    <p class="nomeContacto">Carlos Xistra</p>
+                    <input type="checkbox" class="contactos" name="Carlos Xistra">
+                </div> -->
+
+                <hr>
+
+                <div class="seccaoContactos">
+                    <p class="nomeContacto">Gil Santos</p>
+                    <input type="checkbox" class="contactos" name="Gil Santos">
+                </div>
+
+                <hr>
+
+                <div class="seccaoContactos">
+                    <p class="nomeContacto">Jerónimo Sousa</p>
+                    <input type="checkbox" class="contactos" name="Jerónimo Sousa">
+                </div>
+
+                <hr>
+
+                <div class="seccaoContactos">
+                    <p class="nomeContacto">Samuel Dias</p>
+                    <input type="checkbox" class="contactos" name="Samuel Dias">
+                </div>
+
+                <hr>
+
+                <div class="seccaoContactos">
+                    <p class="nomeContacto">Sebastião Zak</p>
+                    <input type="checkbox" class="contactos" name="Sebastião Zak">
+                </div>
+
+                <hr>
+
+                <div class="seccaoContactos">
+                    <p class="nomeContacto">Tiago Esguicho</p>
+                    <input type="checkbox" class="contactos" name="Tiago Esguicho">
+                </div>
+
+                <hr>
+
+                <div class="seccaoContactos">
+                    <p class="nomeContacto">Vasco Guimarães</p>
+                    <input type="checkbox" class="contactos" name="Vasco Guimarães">
+                </div>
+
+                <hr>
+
+                <div class="seccaoContactos">
+                    <p class="nomeContacto">Violetta Amaral</p>
+                    <input type="checkbox" class="contactos" name="Violetta Amaral">
+                </div>
+
+                <hr>
+
+                <div class="seccaoContactos">
+                    <p class="nomeContacto">Xavier Paulo</p>
+                    <input type="checkbox" class="contactos" name="Xavier Paulo">
+                </div>
+
+                <hr>
+
+                <div class="seccaoContactos">
+                    <p class="nomeContacto">Zélia Vieira</p>
+                    <input type="checkbox" class="contactos" name="Zélia Vieira">
+                </div>
+                <hr>
+            </div>
+
+            <div class="formulario" id="amigosChegados">
+                <div class="localizar">
+                    <button type="button" id="btnLista" onclick="abrirListaContactos()">Ir para a Lista de
+                        Contactos</button>
+                </div>
+
+                <hr>
+
+                <div class="seccaoContactos">
+                    <p class="nomeContacto">André Silva</p>
+                    <input type="checkbox" class="contactos" name="André Silva">
+                </div>
+
+                <hr>
+
+                <div class="seccaoContactos">
+                    <p class="nomeContacto">Beatriz Limões</p>
+                    <input type="checkbox" class="contactos" name="Beatriz Limões">
+                </div>
+
+                <hr>
+
+                <div class="seccaoContactos">
+                    <p class="nomeContacto">Carlos Xistra</p>
+                    <input type="checkbox" class="contactos" name="Carlos Xistra">
+                </div>
+
+                <hr>
+            </div>
+
+            <div class="seccaoContactos">
+                <button type="button" id="btnAdicionar">&#8594;</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,495 @@
+/* Grupo: 01, Número: 57155, Nome: Gabriel Fonseca */
+/* Grupo: 01, Número: 55852, Nome: Marcos Leitão */
+/* Grupo: 01, Número: 56909, Nome: Miguel Fernandes */
+/* Grupo: 01, Número: 56992, Nome: Xavier Santos */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
+
+body {
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#header {
+    grid-area: header;
+    width: 1280px;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+li a {
+    position: relative;
+    display: block;
+    color: white;
+    height: 93.6px;
+    font-size: 20pt;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+li a:hover {
+    background-color: black;
+    text-decoration: none;
+    color: grey;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+#grid-ReuniaoCriada {
+    display: grid;
+    grid-template-areas:
+        'header header header header header'
+        'video video video video video';
+    grid-template-rows: 13% auto;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(grey, white);
+}
+
+#reuniaoCriada {
+    height: 93.6px;
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 20pt;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#video {
+    grid-area: video;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+
+#input {
+    grid-area: input;
+    margin: auto;
+    width: 95%;
+    border-radius: 4px;
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+
+.formulario {
+    background: transparent;
+}
+
+form input {
+    width: 72%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #333;
+    border: none;
+    font-size: 10pt;
+    color: white;
+}
+
+.botaoOpcoes {
+    width: 80px;
+    height: 80px;
+    background-color: #333;
+    color: white;
+    margin: auto;
+    border: none;
+    border-radius: 30%;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.botaoOpcoesCamera {
+    display: none;
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    color: white;
+    margin: auto;
+    border: none;
+    border-radius: 30%;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.botaoPartilhar {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    color: white;
+    margin: auto;
+    border: none;
+    border-radius: 30%;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+span {
+    font-size: 25pt;
+}
+
+#modal1 {
+    grid-area: chat;
+    display: none;
+    background-color: #333;
+}
+
+#modal2 {
+    width: 900px;
+    height: 400px;
+    margin: 0 auto;
+    display: none;
+    position: absolute;
+    padding-top: 120px;
+    left: 0;
+    right: 0;
+    top: 50%;
+    background-color: black;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#modal3 {
+    width: 900px;
+    height: 400px;
+    margin: 0 auto;
+    display: none;
+    position: absolute;
+    padding-top: 120px;
+    left: 0;
+    right: 0;
+    top: 50%;
+    background-color: black;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.modalTitulo {
+    color: white;
+    font-size: 30pt;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#modalContent1 {
+    margin: auto;
+    display: block;
+    color: white;
+    font-size: 30pt;
+    text-align: center;
+}
+
+#modalContent2 {
+    margin: auto;
+    display: block;
+    color: white;
+    font-size: 25pt;
+    text-align: center;
+}
+
+#modalContent2 {
+    margin: auto;
+    display: block;
+    color: white;
+    font-size: 25pt;
+    text-align: center;
+}
+
+#modalContent3 {
+    margin: auto;
+    display: block;
+    color: white;
+    font-size: 25pt;
+    text-align: center;
+}
+
+#btnMusicas {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    font-size: 50pt;
+}
+
+#btnImagens {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    font-size: 50pt;
+}
+
+#btnDocumentos {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    font-size: 50pt;
+}
+
+#btnFicheiro {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    font-size: 50pt;
+}
+
+.back {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.back:hover,
+.back:focus {
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.close:hover,
+.close:focus {
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close2 {
+    position: absolute;
+    top: 85px;
+    right: 10px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.close2:hover,
+.close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+#grid-camera {
+    display: grid;
+    grid-template-areas:
+        'camera1 camera2 chat'
+        'camera3 camera4 chat'
+        'opcoes opcoes chat';
+    grid-template-rows: auto auto 15%;
+    grid-template-columns: auto auto 30%;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    height: 262.225px;
+    width: 448px;
+}
+
+#camera1 {
+    grid-area: camera1;
+    justify-content: center;
+    align-items: center;
+    height: 262.2px;
+    width: 448px;
+    color: white;
+}
+
+#camera2 {
+    grid-area: camera2;
+    justify-content: center;
+    align-items: center;
+    height: 262.2px;
+    width: 448px;
+    color: white;
+}
+
+#camera3 {
+    grid-area: camera3;
+    justify-content: center;
+    align-items: center;
+    height: 262.225px;
+    width: 448px;
+    color: white;
+}
+
+#camera4 {
+    grid-area: camera4;
+    justify-content: center;
+    align-items: center;
+    height: 262.225px;
+    width: 448px;
+    color: white;
+}
+
+#opcoes {
+    grid-area: opcoes;
+    background-color: grey;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+
+#chat {
+    grid-area: chat;
+    background-color: grey;
+}
+
+#grid-chatBox {
+    display: grid;
+    grid-template-areas:
+        'chatBox'
+        'input';
+    grid-template-rows: auto 15%;
+    width: 100%;
+    height: 100%;
+}
+
+#chatBox {
+    grid-area: chatBox;
+    background-color: #333;
+    overflow-y: auto;
+}
+
+#input {
+    grid-area: input;
+    margin: auto;
+    width: 90%;
+    border-radius: 4px;
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+
+.msg-container {
+    display: inline-block;
+    width: 100%;
+}
+
+.msg-box {
+    display: flex;
+    background: #5b5e6c;
+    padding: 15px 15px 15px 15px;
+    border-radius: 6px 0 0 6px;
+    max-width: 80%;
+    width: auto;
+    float: right;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
+}
+
+.msg-box p {
+    display: inline-block;
+    font-size: 15pt;
+    line-height: 13pt;
+    color: rgba(255, 255, 255, .7);
+    margin: 0 0 4px 0;
+    color: white;
+}
+
+.msg-box a {
+    display: inline-block;
+    font-size: 15pt;
+    line-height: 13pt;
+    color: rgba(255, 255, 255, .7);
+    margin: 0 0 4px 0;
+}
+
+#btnMensagem {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    margin: auto;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#btnClip {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    margin: auto;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+button {
+    cursor: pointer;
+}

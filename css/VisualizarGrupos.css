@@ -1,0 +1,167 @@
+/* Grupo: 01, Número: 57155, Nome: Gabriel Fonseca */
+/* Grupo: 01, Número: 55852, Nome: Marcos Leitão */
+/* Grupo: 01, Número: 56909, Nome: Miguel Fernandes */
+/* Grupo: 01, Número: 56992, Nome: Xavier Santos */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
+
+body {
+    width: 1280px;
+    height: 720px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#header {
+    grid-area: header;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+li a {
+    position: relative;
+    display: block;
+    color: white;
+    height: 100%;
+    font-size: 20pt;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+li a:hover {
+    background-color: black;
+    text-decoration: none;
+    color: grey;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+#grid-visualizarContactos {
+    display: grid;
+    grid-template-areas:
+        'header header header header header'
+        'grupos . conteudo conteudo .';
+    grid-template-rows: 13% auto;
+    grid-gap: 10px;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(grey, white);
+}
+
+#visualizarGrupos {
+    position: relative;
+    display: block;
+    color: white;
+    height: 100%;
+    font-size: 20pt;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#grupos {
+    grid-area: grupos;
+    width: 80%;
+    height: 95%;
+    margin: auto;
+    background-color: #333;
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+
+#criarGrupo {
+    grid-area: conteudo;
+    margin: auto;
+    background-color: #333;
+    color: white;
+    padding: 25px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 50px;
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+
+#criarGrupo:hover {
+    background-color: grey;
+}
+
+#headerSearch {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(111, 177, 127, 1) 0%, rgba(154, 173, 89, 1) 100%);
+    padding: 2em 0;
+    align-items: center;
+}
+
+h2 {
+    color: white;
+}
+
+#lista-grupos {
+    width: 100%;
+    height: 80%;
+    height: 450px;
+    overflow-y: auto;
+    cursor: pointer;
+}
+
+.seccao-grupos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10%;
+}
+
+.seccao-grupos:hover {
+    background-color: grey;
+}
+
+.nome-grupo {
+    color: white;
+    font-size: 1.2em;
+}
+
+hr {
+    border: 0 5px;
+}

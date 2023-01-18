@@ -1,0 +1,124 @@
+/* Grupo: 01, Número: 57155, Nome: Gabriel Fonseca */
+/* Grupo: 01, Número: 55852, Nome: Marcos Leitão */
+/* Grupo: 01, Número: 56909, Nome: Miguel Fernandes */
+/* Grupo: 01, Número: 56992, Nome: Xavier Santos */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
+
+body {
+    width: 1280px;
+    height: 720px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#header {
+    grid-area: header;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+li a {
+    position: relative;
+    display: block;
+    color: white;
+    height: 100%;
+    font-size: 20pt;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+li a:hover {
+    background-color: black;
+    text-decoration: none;
+    color: grey;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+#grid-index {
+    display: grid;
+    grid-template-areas:
+        'header header header header header'
+        '. grupo . reuniao .';
+    grid-template-rows: 13% auto;
+    grid-gap: 10px;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(grey, white);
+}
+
+#Admin {
+    position: relative;
+    display: block;
+    color: white;
+    height: 100%;
+    font-size: 20pt;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#grupo {
+    grid-area: grupo;
+    margin: auto;
+}
+
+#reuniao {
+    grid-area: reuniao;
+    margin: auto;
+}
+
+.botao {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 25px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.botao:hover {
+    background-color: grey;
+}

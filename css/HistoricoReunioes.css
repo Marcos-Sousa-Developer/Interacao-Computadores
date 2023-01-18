@@ -1,0 +1,139 @@
+/* Grupo: 01, Número: 57155, Nome: Gabriel Fonseca */
+/* Grupo: 01, Número: 55852, Nome: Marcos Leitão */
+/* Grupo: 01, Número: 56909, Nome: Miguel Fernandes */
+/* Grupo: 01, Número: 56992, Nome: Xavier Santos */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
+
+body {
+    width: 1280px;
+    height: 720px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#header {
+    grid-area: header;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+li a {
+    position: relative;
+    display: block;
+    color: white;
+    height: 100%;
+    font-size: 20pt;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+li a:hover {
+    background-color: black;
+    text-decoration: none;
+    color: grey;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+#grid-historicoReunioes {
+    display: grid;
+    grid-template-areas:
+        'header header header header header'
+        'chat chat chat chat chat';
+    grid-template-rows: 13% auto;
+    grid-gap: 10px;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(grey, white);
+}
+
+#DadosSemestre {
+    position: relative;
+    display: inline-block;
+    color: white;
+    height: 100%;
+    font-size: 20pt;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#chat {
+    grid-area: chat;
+}
+
+.msg-box {
+    display: flex;
+    background: #5b5e6c;
+    padding: 15px 15px 15px 15px;
+    border-radius: 0 6px 6px 0;
+    max-width: 80%;
+    width: auto;
+    float: left;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
+}
+
+.msg-box a {
+    display: inline-block;
+    font-size: 15pt;
+    line-height: 13pt;
+    color: rgba(255, 255, 255, .7);
+    margin: 0 0 4px 0;
+}
+
+.msg-container {
+    display: inline-block;
+    width: 100%;
+}
+
+.chat-encerrado {
+    line-height: 60px;
+    color: rgba(255, 255, 255, .7);
+    text-indent: 35%;
+    font-size: 15pt;
+    background: #40434e;
+    margin-top: 37%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 6px 6px 6px 6px;
+}
