@@ -2,8 +2,8 @@
     <img src="https://static.vecteezy.com/system/resources/previews/009/300/319/original/3d-illustration-of-web-development-png.png" alt="Logo" width="80" height="80">
 </p>
 
-# <h1 align="center">GVC – Group Video Chat</h3>
-<h4 align="center">Projeto para a cadeira de Interação com Computadores (2021/2022)</h5>
+# <h1 align="center">GVC – Group Video Chat</h1>
+<h4 align="center">Projeto para a cadeira de Interação com Computadores (2021/2022)</h4>
 
 <hr>
 
